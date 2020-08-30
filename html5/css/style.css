@@ -1,0 +1,106 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navigation {
+    background-color: lightsteelblue;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation ul {
+    display: flex;
+    list-style: none;
+    /* flex-direction: column; */
+    
+    }
+
+#navigation ul li {
+    /* padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+    padding-left: 10px; */
+    /* padding: 12px 10px 12 px 10px; */
+    padding: 12px 10px;
+    font-size: 22px;
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    color: azure;
+    background-color: lightsalmon;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    transition: 0.5s all;
+}
+#navigation ul li a:hover{
+    color: black;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.article {
+    width: 30%;
+    border:  1px dashed royalblue;
+    margin: 2.5%;
+    position: relative;
+}
+
+.article::before{
+    content: "to jest moj tooltip";
+    position: absolute;
+    visibility: hidden;
+
+    background-color: saddlebrown;
+    color: whitesmoke;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* ::befote, ::after */
+
+main { 
+    display: flex;
+}
+
+.article h3 {
+text-align: center;
+}
+
+.article p {
+    padding: 6px 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.article:hover::before{
+    visibility: visible;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm  label{
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+#contactForm  label span{
+    width: 100px;
+    display: inline-block;
+}
+
+#contactForm  label input{
+    width: 200px;
+}
+
+#submit{
+    margin-left: 100px;
+    width: 200px;
+}

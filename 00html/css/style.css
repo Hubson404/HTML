@@ -1,3 +1,14 @@
 .main-paragraph {
     color: darkblue;
 }
+#block-element {
+    border: 2px solid darkorange;
+}
+
+#block-element p {
+    border: 1px dashed green;
+}
+
+#block-element span {
+    border: 1px solid red;
+}

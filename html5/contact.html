@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Moja pierwsza strona internetowa</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">O mnie</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contactForm" action="http://172.16.177.32/html_/form.php" method="post">
+            <label for="firstName">
+                <span>Imię:</span> <input type="text" name="firstName" id="firstName">
+            </label>
+            <label for="lastName">
+                <span>Nazwisko:</span> <input type="text" name="lastName" id="lastName">
+            </label>
+            <label for="email">
+                <span>E-mail:</span> <input type="email" name="email" id="email">
+            </label>
+            <input id="submit" type="submit" value="Wyslij">
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; HG 2020</p>
+    </footer>
+
+
+</body>
+
+</html>
